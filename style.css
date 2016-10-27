@@ -1,5 +1,9 @@
+*{
+  box-sizing: border-box;
+}
 body{
-  padding: 25px 50px;
+  padding: 25px;
+  margin: 0;
   font-family: 'Catamaran', sans-serif;
   color: rgba(45, 45, 45, 0.7)
 }
@@ -17,7 +21,9 @@ header ul li{
   margin-right: 50px;
   text-transform: uppercase;
 }
-
+.main{
+max-width: 100%;
+}
 .menu, .content{
   display: inline-block;
   vertical-align: top;
@@ -25,7 +31,8 @@ header ul li{
 
 .menu{
   border-right: 1px solid rgba(177, 177, 175, 0.5);
-  width: 250px;
+  /*max-width: 30%;*/
+  min-width: 225px;
 }
 
 .menu .container{
@@ -51,35 +58,37 @@ header ul li{
 
 .content{
   padding: 25px;
-  max-width: 1000px;
+  width: 1200px;
 }
-
 .product-card{
-  width: 250px;
-  float:left;
-  margin-right: 50px;
+  width: 25%;
+  display: inline-block;
+  margin: 25px -4px 25px 0;
+  padding: 25px;
 }
 .product-image{
   height: 250px;
   background-position: center center;
-  background-size: 70%;
+  background-size: 80%;
   background-repeat: no-repeat;
 }
 
+.content div:last-of-type{
+  margin: 0;
+}
 .product-info{
-  padding: 25px;
+  /*padding: 25px;*/
+  position: relative;
 }
 .product-info .description{
-  width: 70%;
-  display: inline-block;
-  vertical-align: middle;
+  width: 100%;
 }
 .product-info .price{
-  width: 20%;
-  float: right;
+  position: absolute;
+  right: 15px;
+  top: -25px;
   font-weight: 900;
-  font-size: 1.8em;
-  padding-top: 10px;
+  font-size: 1.4em;
   color: rgb(143, 219, 126);
 }
 
