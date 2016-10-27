@@ -1,0 +1,94 @@
+body{
+  padding: 10px;
+  font-family: 'Catamaran', sans-serif;
+  color: rgba(45, 45, 45, 0.7)
+}
+header{
+  border-bottom: 1px solid rgba(177, 177, 175, 0.5);
+}
+header ul{
+  list-style-type: none;
+}
+
+header ul li{
+  color: black;
+  display: inline;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+.menu, .content{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu{
+  border-right: 1px solid rgba(177, 177, 175, 0.5);
+  width: 250px;
+}
+
+.menu .container{
+  padding-top: 25px;
+}
+
+.menu h2{
+  color: black;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin-bottom: 25px;
+}
+
+.menu ul li input[type="checkbox"]{
+  margin-right: 10px;
+  background-color: white;
+}
+
+.content{
+  padding: 25px;
+  max-width: 1000px;
+}
+
+.product-card{
+  width: 250px;
+  float:left;
+  margin-right: 50px;
+}
+.product-image{
+  height: 250px;
+  background-position: center center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.product-info{
+  padding: 25px;
+}
+.product-info .description{
+  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.product-info .price{
+  width: 20%;
+  float: right;
+  font-weight: 900;
+  font-size: 1.8em;
+  padding-top: 10px;
+  color: rgb(143, 219, 126);
+}
+
+.product-info h3{
+  color: black;
+  margin: 0;
+  font-size: 1em;
+}
+
+.product-info p{
+  margin: 0;
+  font-size: 0.8em;
+}
