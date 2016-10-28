@@ -62,55 +62,31 @@
     </div>
   </div>
   <div class="content">
-      <div class="product-card">
-        <div class="product-image" style="background-image: url(img/laptop01.jpg)"></div>
+    <div class="product-card">
+      <div class="product-wrapper">
+        <div class="product-inner">
+        <img src="img/laptop01.jpg" alt="">
+        <div class="product-overlay"></div>
         <div class="product-info">
+        <div class="info-container">
+            <span class="price">&pound;329</span>
+          <span class="title">Asus Laptop</span>
+          <p>Good all rounder</p>
           <div class="description">
-              <h3>ASUS X555LA</h3>
-            <p>All-rounder for work and play</p>
-          </div>
-          <div class="price">
-            &pound;329
+            <p>The Pavilion 15 delivers enough power to see you through the working day and beyond thanks to its 9 hour battery life, making it ideal for taking notes in lecture, writing essays, streaming TV, and catching up with your friends on social media.</p>
           </div>
         </div>
-      </div>
-      <div class="product-card">
-        <div class="product-image" style="background-image: url(img/laptop01.jpg)"></div>
-        <div class="product-info">
-          <div class="description">
-              <h3>ASUS X555LA</h3>
-            <p>All-rounder for work and play</p>
-          </div>
-          <div class="price">
-            &pound;329
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-image" style="background-image: url(img/laptop01.jpg)"></div>
-        <div class="product-info">
-          <div class="description">
-              <h3>ASUS X555LA</h3>
-            <p>All-rounder for work and play</p>
-          </div>
-          <div class="price">
-            &pound;329
-          </div>
-        </div>
-      </div>
-      <div class="product-card">
-        <div class="product-image" style="background-image: url(img/laptop01.jpg)"></div>
-        <div class="product-info">
-          <div class="description">
-              <h3>ASUS X555LA</h3>
-            <p>All-rounder for work and play</p>
-          </div>
-          <div class="price">
-            &pound;329
-          </div>
-        </div>
+      </div></div>
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    $('.product-card').hover(function(){
+      $(this).find('.product-wrapper').addClass('animate');
+    }, function(){
+      $(this).find('.product-wrapper').removeClass('animate');
+    });
+  </script>
 </body>
 </html>

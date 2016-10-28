@@ -22,7 +22,7 @@ header ul li{
   text-transform: uppercase;
 }
 .main{
-max-width: 100%;
+width: 1500px;
 }
 .menu, .content{
   display: inline-block;
@@ -61,35 +61,87 @@ max-width: 100%;
   width: 1200px;
 }
 .product-card{
-  width: 25%;
-  display: inline-block;
-  margin: 25px -4px 25px 0;
-  padding: 25px;
-}
-.product-image{
-  height: 250px;
-  background-position: center center;
-  background-size: 80%;
-  background-repeat: no-repeat;
+  width: 320px;
+  height: 340px;
+  position: relative;
+
 }
 
-.content div:last-of-type{
-  margin: 0;
+.product-wrapper.animate .product-front{
+  top: 0;
+  left: 0;
 }
-.product-info{
-  /*padding: 25px;*/
-  position: relative;
+.product-wrapper{
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all 100ms ease-out;
+  width: 320px;
+  height: 360px;
 }
-.product-info .description{
+
+.product-wrapper.animate{
+  top: 5px;
+  left: 5px;
+  width: 330px;
+  height: 370px;
+}
+
+.product-inner{
+  top: -5px;
+  left: -5px;
+  width: 330px;
+  height: 370px;
+  position: absolute;
+  transition: all 100ms ease-out;
+}
+.product-wrapper.animate .product-inner{
+  top: 0px;
+  left: 0px;
+}
+
+.product-inner img{
   width: 100%;
 }
-.product-info .price{
+
+
+.product-overlay{
   position: absolute;
-  right: 15px;
-  top: -25px;
-  font-weight: 900;
-  font-size: 1.4em;
-  color: rgb(143, 219, 126);
+  top: 0;
+  left: 0;
+  background-color: rgb(190, 200, 237);
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  transition: all 100ms ease-out;
+}
+
+
+
+.product-wrapper.animate .product-overlay{
+  opacity: 0.7;
+}
+
+.product-info{
+  position: relative;
+}
+.info-container{
+  padding: 10px;
+  transition: all 100ms ease-out;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product-wrapper.animate .info-container{
+  top: -120px;
+}
+.product-info .title{
+}
+.product-info .price{
+  float: right;
+  color: rgb(109, 136, 235);
 }
 
 .product-info h3{
